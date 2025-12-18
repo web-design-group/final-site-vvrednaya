@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
+	<title>index</title>
+</head>
+<body>
+	<header>
+		<div class="container headerinfo">
+			<div class="headersection">
+				<div class="logo">
+					<div class="img_logo">
+						<img src="img/Subtract.png" alt="">
+					</div>
+				<div class="header__item headerlogo">
+					Secrets of Time
+				</div>
+				</div>
+		</div>
+		<div class="headersection">
+			<div class="header__item headertext"><a href="index.html">Главная</a></div>
+			<div class="header__item headertext"><a href="/grid/services.html">Каталог</a></div>
+			<div class="header__item headertext"><a href="#" id="openoverlay"><img src="img/User_cicrle_light.png" alt=""></a></div>
+			<div class="header__item headertext1"><a href="#"><img src="img/Bag_alt_light.png" alt=""></a></div>
+		</div>
+	</div>
+	<hr>
+	</header>
+	<section class="section1">
+		<div class="container sectioninfo">
+			<div class="sectioninfo--text">
+			<h1>Gothic jewelry</h1>
+				<p>Наша готическая коллекция украшений окутывает своего <br>
+					владельца таинственной магией средневековой архитектуры. <br>
+					Она впечатляет своей роскошью, богатством, эстетическим <br>
+					сиянием и глубиной теней. <br>
+					Изысканные и эффектные украшения, которые станут <br>
+					прекрасным подарком для любителей средневековой <br>
+					архитектуры и винтажных соборов прошлых эпох, оставляя <br>
+					неизгладимое впечатление.</p>
+					<button onclick="window.location.href='/grid/services.html';" class="button">Посмотреть каталог</button>
+			</div>
+				<div class="section_img">
+					<img src="img/image_33.png" alt="">
+				</div>
+		</div>
+	</section>
+	<section>
+		<div class="container card">
+			<div class="pic"><img src="img/Frame1.png" alt=""><button onclick="window.location.href='/bootstrap/Pendants.html';" class="button card--btn">Подвесы, кулоны</button></div>
+			<div class="pic"><img src="img/Frame2.png" alt=""><button class="button card--btn">Кольца</button></div>
+			<div class="pic"><img src="img/Frame3.png" alt=""><button class="button card--btn">Серьги</button></div>
+			<div class="pic"><img src="img/Frame4.png" alt=""><button class="button card--btn">Заколки</button></div>
+			<div class="pic"><img src="img/Frame5.png" alt=""><button class="button card--btn">Цепочки</button></div>
+			<div class="pic"><img src="img/Frame6.png" alt=""><button class="button card--btn">Бусы</button></div>
+		</div>
+	</section>
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="footer">
+				<div class="footertext">
+					<div class="text">О нас</div>
+					<div class="footerinfo info1"><p>Самое важное в наших <br>
+						украшениях,<br>
+						как и в произведениях искусства, – <br>
+						их художественная <br>
+						ценность. Поэтому они никогда <br>
+						не выходят из моды. Их покупают <br>
+						не на сезон или два, <br>
+						а на всю жизнь.</p></div>
+				</div>
+				<div class="footertext">
+					<div class="text">Контакты</div>
+					<div class="footerinfo info1"><p>+7 (900) 565-90-42<br><br> secrets.of.time@gmail.com</p>
+						<div class="inf_img">
+							<img src="img/vk.png" alt=""><img src="img/tg.png" alt=""></div>
+						</div>
+				</div>
+				<div class="footertext">
+					<div class="text1">Способы оплаты</div>
+					<div class="footerinfo info1">
+						<div class="inf_img">
+							<img src="img/Mir" alt=""><img src="img/Visa.png" alt=""><img src="img/MasterCard.png" alt=""></div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="overlay" id="overlay" style="display: none;">
+		<div class="form" id="registraciya">
+			<div class="formcard">
+				<div class="reg">Регистрация</div>
+				<div class="form-text">
+					<div class="registr">Регистрация</div>
+					<div class="vhod"><a href="#" id="openLogin">Вход</a></div>
+				</div>
+				<div class="input-container">
+					<input class="input" placeholder="E-mail">
+					<input class="input" type="number" placeholder="Номер телефона">
+					<input class="input" type="password" placeholder="Пароль">
+					<input class="input" type="password" placeholder="Пароль еще раз">
+					<button class="button-form" id="zareg">Зарегистрироваться</button>
+				</div>
+			</div>
+		</div>
+		<div class="form" id="login" style="display: none;">
+			<div class="formcard">
+				<div class="reg">Вход</div>
+				<div class="form-text">
+					<div class="registrreg"><a href="#" id="openReg">Регистрация</a></div>
+					<div class="vhodvhod">Вход</div>
+				</div>
+				<div class="input-container input-login">
+					<input class="input" placeholder="E-mail">
+					<input class="input" type="password" placeholder="Пароль">
+					<div class="password">Забыли пароль?</div>
+					<button class="button-form" id="voiti">Войти</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
